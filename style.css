@@ -1,0 +1,109 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Colors */
+:root {
+  --primary: #0d7377;
+  --secondary: #32e0c4;
+  --text: #ffffff;
+  --background: #1a1a1d;
+}
+
+/* Body */
+body {
+  background-color: var(--background);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* Navigation */
+header {
+  background: linear-gradient(to right, var(--primary), var(--secondary));
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--text);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+  color: var(--secondary);
+}
+
+/* Section Styling */
+.section {
+  padding: 4rem 2rem;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.section:nth-child(even) {
+  background-color: #222831;
+}
+
+h1, h2 {
+  margin-bottom: 1rem;
+  color: var(--secondary);
+}
+
+.content {
+  max-width: 800px;
+}
+
+ul {
+  list-style: disc;
+  margin: 1rem auto;
+  text-align: left;
+  max-width: 600px;
+}
+
+/* Links */
+a {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #0f4c5c;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
